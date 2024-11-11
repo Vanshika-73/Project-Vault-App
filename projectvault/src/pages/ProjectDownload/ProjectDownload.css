@@ -1,0 +1,42 @@
+.project-heading{
+    margin: 0;
+    padding: 20px 20px;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    text-align: center;
+    background-color: #8DA9C4;
+    border-radius: 0px 0px 15px 15px;
+}
+.projectlink{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+    border-radius: 10px;
+    background-color: #EEF4ED;
+    .projectlink-message{
+        width: 90%;
+        margin-left: 30px;
+    }
+    .projectlink-button{
+        background-color: #13315C;
+        border-radius: 0px 10px 10px 0px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}
+
+.project-download-subheading{
+    margin: 40px 0vw 0vw 40px ;
+}
+.download-list-spacer{
+    margin: 200px 0vh;
+}
+@media (max-width: 600px) {
+    .download-list-spacer{
+        margin: 300px 0vh;
+    }
+}

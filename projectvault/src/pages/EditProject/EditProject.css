@@ -1,0 +1,10 @@
+.loader-message{
+    margin-top: 30vh;
+    margin-bottom: 45vh;
+    display: flex;
+    justify-content: center;
+    p{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+}

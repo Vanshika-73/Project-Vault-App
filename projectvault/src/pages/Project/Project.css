@@ -1,0 +1,267 @@
+
+.project-owner-area{
+    margin: 10px 70px 7px 70px;
+    display: flex;
+    justify-content: end;
+    .owner-buttons{
+        background-color: #EEF4ED;
+        border-radius: 10px;
+        margin: 0vh 3px;
+        padding: 8px 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+}
+.project-delete-modal{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .project-delete-modal-content{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        background-color: #eaeaea;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.200);
+        padding: 25px 25px;
+        h2{
+            margin: 0;
+        }
+        .modal-buttons{
+            width: 90% ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .delete-modal-button{
+                cursor: pointer;
+                padding: 8px 25px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                color: white;
+                background-color: rgb(158, 23, 23);
+            }
+            .cancel-modal-button{
+                cursor: pointer;
+                padding: 8px 25px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                background-color: rgb(255, 255, 255);
+            }
+            p{
+                margin: 0px;
+            }
+        }
+    }
+}
+.body-project{
+    background-color: #EEF4ED;
+    border-radius: 30px;
+    margin: 10px 70px 20px 70px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    .LHS{ 
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        img{
+            padding: 40px;
+            width: 300px;
+            object-fit: contain;
+            border-radius: 60px;
+        }
+    }
+    @media (max-width: 900px) {
+        .LHS{ 
+            display: none;
+        }
+    }
+    @media (max-width: 600px) {
+        .LHS{ 
+            display: flex;
+        }
+    }
+    .RHS{
+        width: 60%;
+        padding: 20px 40px;
+        .project-id-text{
+            margin: 0px;
+            font-size: 0.8em;
+            text-align: end;
+            color: #525252;
+        }
+        h2{
+            margin: 0px;
+        }
+        .av-docs{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .doc{
+                cursor: pointer;
+                margin: 0px 10px 10px 0px;
+                padding: 2px 6px;
+                background-color: rgb(209, 209, 209);
+                border-radius: 6px;
+                p{
+                    margin: 0px;
+                }
+            }
+        }
+        .download-section{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            .downloads-text{
+                margin-left: 20px;  
+                font-size: 1em;
+                font-weight: 400;
+                color: #525252;
+            }
+        }
+        .download-button{
+            cursor: pointer;
+            background-color: #13315C;
+            width: 200px;
+            height: 40px;
+            border: #000 none;
+            outline: none;
+            border-radius: 10px;
+            font-size: 1em;
+            color: #FFFFFF;
+            transform: scale(1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.215);   
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .download-button:hover{
+            transform: scale(1.03);
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.363);
+        }
+        .rating-div{
+            display: flex;
+            flex-direction: column;
+            .rating-show{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .rate-button{
+                    margin-left: 2vw;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 30px;
+                    border: none;
+                    outline: none;
+                    background-color: #FFF;
+                    cursor: pointer;
+                    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.215); 
+                }
+            }
+            .rate-option{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .rate-option-button{
+                    margin-right: 5px;
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 20px;
+                    border: none;
+                    outline: none;
+                    background-color: #FFF;
+                    cursor: pointer;
+                    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.215); 
+                    overflow: hidden;
+                }
+                .rate-option-close-button{
+                    margin-right: 5px;
+                    height: 30px;
+                    width: 50px;
+                    border-radius: 20px;
+                    border: none;
+                    outline: none;
+                    color: #FFFFFF;
+                    background-color: #0B2545;
+                    cursor: pointer;
+                    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.215); 
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    @media (max-width: 900px) {
+        .RHS{ 
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .project-owner-area{
+        margin: 10px 20px 7px 20px;
+    }
+    .body-project{
+        margin: 10px 20px 20px 20px;
+        flex-direction: column;
+        .LHS{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+        }
+        .RHS{
+            width: 84%;
+            padding: 20px 7%;
+            h2{
+                margin-bottom: 10px;
+            }
+            .project-id-text{
+                text-align: start;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .project-delete-modal{
+        padding: 0px 10%;
+    }
+}
+.no-project{
+    margin: 30vh 0vw 70vh 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 120px;
+    }
+    .deleted{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .delete-message{
+            font-weight: 500;
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+    
+}
+.extra-space-up{
+    margin: 50px;
+}
+.extra-space-down{
+    margin: 120px;
+}

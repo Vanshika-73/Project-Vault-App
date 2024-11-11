@@ -1,0 +1,89 @@
+@media (min-width: 900px) {
+    .footer{
+    width: 92%;
+    height: 70px;
+    padding: 0px 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EEF4ED;
+    margin-top: 60px;
+    .footer-text{
+        font-size: 1em;
+    }
+    .footer-buttons{
+        font-size: 0.8em;
+        padding: 5px 20px;
+        margin: 0px 9px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: none;
+        text-transform: capitalize;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+}
+
+@media (max-width: 900px) {
+    .footer{
+        width: 92%;
+        height: 90px;
+        padding: 0px 4%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #EEF4ED;
+        margin-top: 60px;
+        .footer-text{
+            font-size: 1em;
+        }
+        .footer-buttons{
+            font-size: 0.8em;
+            padding: 5px 20px;
+            margin: 5px 9px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: none;
+            text-transform: capitalize;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer{
+        width: 92%;
+        height: max-content;
+        padding: 10px 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #EEF4ED;
+        margin-top: 60px;
+        .footer-text{
+            font-size: 1em;
+        }
+        .button-list{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .footer-buttons{
+                font-size: 0.8em;
+                padding: 5px 20px;
+                margin: 5px 9px;
+                background-color: #ffffff;
+                border-radius: 5px;
+                border: none;
+                text-transform: capitalize;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        }
+        
+    }
+}

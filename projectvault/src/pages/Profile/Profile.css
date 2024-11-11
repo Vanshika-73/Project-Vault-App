@@ -1,0 +1,280 @@
+.user-info-div{
+    margin: 60px 80px 20px 80px;
+    padding-left: 20px ;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background-color: #EEF4ED;
+    overflow: hidden;
+    .user-image{
+        margin: 20px 20px 20px 0px;
+        background-color: #EEF4ED;
+        border-radius: 10px;
+        img{
+            height: 80px;
+            width: 80px;
+            border-radius: 5px;
+            align-items: center;
+            align-self: center;
+        }
+    }
+    .user-info{
+        margin: 10px; 
+        padding: 10px;
+        width: 80%;
+        border-radius: 10px;
+        align-content: center;
+        .info-name{
+            font-weight: 700;
+            margin: 7px 20px;
+        }
+        .info-email{
+            margin: 7px 20px;
+        }
+    }
+}
+.projects{
+    margin: 10px 80px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    .sub-heading-div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .subheading{
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        .subheading-data{
+            margin-left: 10px;
+            font-size: 1em;
+            font-weight: 400;
+        }
+        .subheading-data-loader-div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    
+    .projects-in{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .project{
+            height: 150px;
+            width: 100px;
+            background-color: #EEF4ED;
+            border-radius: 10px;
+            margin: 10px 10px 10px 0px ;
+            padding: 10px 10px 10px 10px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            white-space: none;
+            cursor: pointer;
+            .image{
+                height: 70%;
+                object-fit: contain;
+                align-self: center;
+                align-content: center;
+                img{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 7px;
+                }
+            }
+            .title{
+                font-size: 0.86em;
+                height: 30%;
+                    /* align-self: center;
+                    align-content: center;
+                    text-align: center; */
+                    /* overflow: hidden; */
+                text-overflow: ellipsis;
+                overflow: -moz-hidden-unscrollable;
+            }
+            .loading-text{
+                font-size: 2em;
+                font-weight: 900;
+                color: rgb(135, 135, 135);
+            }
+            .no-project-text{
+                font-size: 1.2em;
+                text-align: center;
+                font-weight: 700;
+                color: rgb(135, 135, 135);
+            }
+        }
+    }
+}
+
+
+.profile-buttons{
+    display: flex;
+    flex-direction: row;
+    .button-logout{
+        height: 40px;
+        width: 70%;
+        cursor: pointer;
+        margin: 40px 10px;
+        background-color: #13315C;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        font-size: 0.8em;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+    .button-delete-account{
+        height: 40px;
+        width: 30%;
+        cursor: pointer;
+        margin: 40px 10px;
+        background-color: #8a1717;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        font-size: 0.8em;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+    
+}
+.project-delete-modal{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .project-delete-modal-content{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        background-color: #eaeaea;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.200);
+        padding: 25px 25px;
+        h2{
+            margin: 0;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .modal-buttons{
+            width: 90% ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .delete-modal-button{
+                cursor: pointer;
+                padding: 8px 25px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                color: white;
+                background-color: rgb(158, 23, 23);
+            }
+            .cancel-modal-button{
+                cursor: pointer;
+                padding: 8px 25px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                background-color: rgb(255, 255, 255);
+            }
+            
+        }
+    }
+}
+@media (max-width: 600px) {
+    .user-info-div{
+        margin: 20px 20px;
+        padding: 0px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 20px;
+        /* background-color: #f5f9f4; */
+        background-color: transparent;
+        overflow: visible;
+        .user-image{
+            width: max-content;
+            align-self: center;
+            margin: 15px 0px 0px 0px;
+            background-color: transparent;
+            border-radius: 10px;
+            img{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                align-items: center;
+                align-self: center;
+                object-fit: cover;
+                border: 1.5px solid #909090;
+            }
+        }
+        .user-info{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0px 10px 0px; 
+            align-items: center;
+            background-color: #EEF4ED;
+            .info-name{
+                font-weight: 700;
+                margin: 2px 0px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .info-email{
+                margin: 3px 0px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    .projects{
+        margin: 10px 20px 80px 20px;
+        .projects-in{
+            justify-content: center;
+            .project{
+                height: 150px;
+                width: 85px;
+                justify-content: space-between;
+                .image{
+                    img{
+                        height: 80px;
+                        width: 80px;
+                        border-radius: 7px;
+                    }
+                }
+                .title{
+                    display: flex;
+                    justify-content: start; 
+                    align-items: start;
+                    align-content: start;
+                    text-align: center;
+                    overflow: hidden;
+                    p{
+                        margin: 0px;
+                        align-self: start;
+                        text-overflow: ellipsis;
+                    }
+                }
+                .loading-text{
+                    margin-top: 50px ;
+                }
+            }
+        }
+    }
+}

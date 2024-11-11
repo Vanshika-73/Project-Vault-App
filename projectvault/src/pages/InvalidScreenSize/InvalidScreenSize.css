@@ -1,0 +1,24 @@
+.invalid-screen-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .invalid-header{
+        width: 100%;
+        margin: 0px auto;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 80px;
+            width: 200px;
+            object-fit: contain;
+        }
+    }
+    .invalid-body{
+        padding: 30vh 10vw;
+        h1{
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+}

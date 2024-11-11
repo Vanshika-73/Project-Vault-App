@@ -1,0 +1,73 @@
+.about-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-section {
+    margin-bottom: 30px;
+  }
+  
+  .about-section h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .mission-section,
+  .features-section,
+  .benefits-section,
+  .how-it-works-section,
+  .join-us-section {
+    margin-bottom: 30px;
+  }
+  
+  .mission-section h2,
+  .features-section h2,
+  .benefits-section h2,
+  .how-it-works-section h2,
+  .join-us-section h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .mission-section p,
+  .features-section p,
+  .benefits-section p,
+  .how-it-works-section p,
+  .join-us-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #31588e;
+    transition: background-color 0.5s ease ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #13315C;
+  }
+.free-services-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .left-line{
+    margin-right: 30px;
+    width: 10px;
+    height: 150px;
+    color: #31588e;
+    background-color: #31588e;
+  }
+}

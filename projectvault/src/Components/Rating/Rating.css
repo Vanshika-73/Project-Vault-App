@@ -1,0 +1,29 @@
+.product-rating{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .star-rating {
+    padding: 0px 15px;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    
+
+    user-select: none; 
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-focus: none;
+    -webkit-user-drag: none;
+  }
+  .no-star {
+    color: rgb(255, 255, 255);
+  }
+  .half-star {
+    color: gold;
+  }
+  .full-star {
+    color: gold;
+  }
+}
+  

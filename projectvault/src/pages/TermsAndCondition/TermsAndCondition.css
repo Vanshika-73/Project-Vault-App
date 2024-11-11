@@ -1,0 +1,51 @@
+.terms-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    p{
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+  
+  .terms-section {
+    margin-bottom: 30px;
+  }
+  
+  .terms-section h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .use-of-platform-section,
+  .intellectual-property-section,
+  .user-generated-content-section,
+  .pricing-and-sales-section,
+  .disclaimer-section,
+  .termination-section,
+  .contact-section {
+    margin-bottom: 30px;
+  }
+  
+  .use-of-platform-section h2,
+  .intellectual-property-section h2,
+  .user-generated-content-section h2,
+  .pricing-and-sales-section h2,
+  .disclaimer-section h2,
+  .termination-section h2,
+  .contact-section h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .use-of-platform-section p,
+  .intellectual-property-section p,
+  .user-generated-content-section p,
+  .pricing-and-sales-section p,
+  .disclaimer-section p,
+  .termination-section p,
+  .contact-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

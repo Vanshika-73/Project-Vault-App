@@ -1,0 +1,89 @@
+.privacy-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    p{
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+  
+  .privacy-section {
+    margin-bottom: 20px;
+  }
+  
+  .privacy-section h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .privacy-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .information-collect-section,
+  .use-of-information-section,
+  .data-sharing-section,
+  .data-retention-section,
+  .user-rights-section,
+  .contact-section {
+    margin-bottom: 30px;
+  }
+  
+  .information-collect-section h2,
+  .use-of-information-section h2,
+  .data-sharing-section h2,
+  .data-retention-section h2,
+  .user-rights-section h2,
+  .contact-section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .information-collect-section ul,
+  .use-of-information-section ul,
+  .data-sharing-section ul,
+  .user-rights-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .disclaimer-section {
+    margin-bottom: 40px;
+  }
+  
+  .disclaimer-section h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .privacy-container {
+      padding: 10px;
+    }
+  
+    .privacy-section h1 {
+      font-size: 24px;
+    }
+  
+    .information-collect-section h2,
+    .use-of-information-section h2,
+    .data-sharing-section h2,
+    .data-retention-section h2,
+    .user-rights-section h2,
+    .contact-section h2 {
+      font-size: 16px;
+    }
+  
+    .privacy-section p,
+    .information-collect-section p,
+    .use-of-information-section p,
+    .data-sharing-section p,
+    .data-retention-section p,
+    .user-rights-section p,
+    .contact-section p {
+      font-size: 16px;
+    }
+  }
+  
